@@ -1,3 +1,4 @@
+
 :root {
     --primary: rgb(192, 176, 176);
     --secondary: rgb(46, 68, 129);
@@ -9,6 +10,8 @@
 body{
     background-color: black;
     font-size: 20px;
+    height: 100%;
+    width: 100%;
 }
 #background{
 height: 100vh;
@@ -16,6 +19,7 @@ width: 100vw;
 background: linear-gradient(180deg, var(--secondary), var(--third));
 border: solid 5px var(--five);
 color: var(--third);
+padding-top: 20vh;
 }
 #titlebx{
 height: 50%;
@@ -29,11 +33,22 @@ text-align: center;
 box-shadow: 0px 2px 20px var(--four);
 text-shadow: 0px 0px 0px var(--four);
 animation-name: glow;
-animation-duration: 4s;
+animation-duration: 3s;
 animation-iteration-count: infinite;
 color: var(--primary);
 }
+.nav{
+    border: 2px solid lime;
+    border-radius: 20%;
+    height: 25vh;
+    width: 12vw;
+    background-color: var(--four);
+    opacity: 60%;
+    position: absolute;
+    text-align: left;
+    margin-top: -100px;
 
+}
 @keyframes glow {
     25% {text-shadow: 1px 1px 20px var(--third)}
     50% {text-shadow: 1px 1px 40px var(--five)}
@@ -42,7 +57,7 @@ color: var(--primary);
 
 #picbx{
 margin-top: 20px;
-margin-left: 45%;
+margin-left: 35%;
 }
 #pp{
 height: 300px;
@@ -62,6 +77,10 @@ box-shadow: 0px 2px 20px var(--four);
 text-align: center;
 font-family: 'Montserrat Alternates', sans-serif;
 }
+
+.list{
+    list-style: none;
+}
 /*projects page*/
 #pbackground{
     height: 110vh;
@@ -69,6 +88,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     background: linear-gradient(0deg, var(--secondary), var(--third));
     text-align: center;
     color: var(--five);
+    border: solid 5px var(--five);
 }
 #pcon{
     height: 85vh;
@@ -98,12 +118,19 @@ a:hover{
 color: aqua;
 }
 /*resume page*/
+
 #rbackground{
-    height: 160vh;
+    height: 110vh;
     width: 100vw;
     background: linear-gradient(180deg, var(--secondary), var(--third));
     text-align: center;
     color: var(--five);
+    border: solid 5px var(--five);
+}
+#rcon{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
 }
 .cert{
     height: 100px;
@@ -112,3 +139,71 @@ color: aqua;
 .cert:hover {
     transform: scale(4);
   }
+
+/*skill*/
+#sbackground{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0deg, var(--secondary), var(--third));
+    text-align: center;
+    color: var(--five);
+    border: solid 5px var(--five);
+}
+#scon{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+}
+.foot{
+    border: 2px solid var(--five);
+    width: fit-content;
+    margin: auto;
+}
+@media (max-width: 800px){
+    #background{
+        height: 100vh;
+        width: 100vw;
+        font-size: 18px;
+    }
+
+    #rbackground{
+        height: 150vh;
+        width: 100vw;
+        font-size: 18px;
+    }
+    .nav{
+        width: 25vw;
+    }
+}
+@media (max-height: 500px){
+    #background{
+        height: 200vh;
+        width: 100vw;
+        font-size: 18px;
+    }
+    #pbackground{
+        height: 200vh;
+        width: 100vw;
+        font-size: 18px;
+    }
+    #pcon{
+        height: 85vh;
+        width: 90vw;
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap: 15px;
+        grid-row-gap: 100px;
+        align-items: center;
+    }
+    #rbackground{
+        height: 300vh;
+        width: 100vw;
+        font-size: 18px;
+    }
+    #sbackground{
+        height: 200vh;
+        width: 100vw;
+        font-size: 18px;
+    }
+}
