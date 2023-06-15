@@ -20,7 +20,7 @@ background: linear-gradient(180deg, var(--secondary), var(--third));
 border: solid 5px var(--five);
 color: var(--third);
 padding-top: 5vh;
-padding-bottom: 5vh;
+padding-bottom: 10vh;
     
 }
 #titlebx{
