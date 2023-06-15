@@ -19,7 +19,9 @@ width: 100vw;
 background: linear-gradient(180deg, var(--secondary), var(--third));
 border: solid 5px var(--five);
 color: var(--third);
-padding-top: 20vh;
+padding-top: 5vh;
+padding-bottom: 5vh;
+    
 }
 #titlebx{
 height: 50%;
@@ -46,7 +48,7 @@ color: var(--primary);
     opacity: 60%;
     position: absolute;
     text-align: left;
-    margin-top: -100px;
+    margin-top: 0px;
 
 }
 @keyframes glow {
