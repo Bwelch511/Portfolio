@@ -14,7 +14,7 @@ body{
     width: 100%;
 }
 #background{
-height: 130vh;
+height: 140vh;
 width: 100vw;
 background: linear-gradient(180deg, var(--secondary), var(--third));
 border: solid 5px var(--five);
@@ -163,7 +163,7 @@ color: aqua;
 }
 @media (max-width: 800px){
     #background{
-        height: 100vh;
+        height: 140vh;
         width: 100vw;
         font-size: 18px;
     }
