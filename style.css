@@ -14,7 +14,7 @@ body{
     width: 100%;
 }
 #background{
-height: 100vh;
+height: 130vh;
 width: 100vw;
 background: linear-gradient(180deg, var(--secondary), var(--third));
 border: solid 5px var(--five);
